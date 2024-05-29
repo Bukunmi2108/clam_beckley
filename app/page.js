@@ -105,11 +105,9 @@ export default function Home() {
               <p className="subhero">
                 Child Custody, Alimony & many more
               </p>
-              <div className="btn-div">
-                <a href="#contact" className="button">
-                  Book a Free Consultation Call
-                </a>
-              </div>
+              <a href="#contact" className="button">
+                Book a Free Consultation Call
+              </a>
             </div>
           </section>
           <section id="testimonial" className="container testimonial">
