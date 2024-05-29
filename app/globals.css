@@ -204,89 +204,92 @@ main{
   }
   .hero-content{
     padding-top: 80px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-  }
-  .reviews-stars{
-    display: flex;
-    gap: 9px;
-    align-items: center;
-    justify-content: center;
+    gap: 30px;
 
-    .stars{
+    .reviews-stars{
       display: flex;
-      gap: 3px;
-      img{
-        width: 15px;
-        height: 15px;
+      gap: 9px;
+      align-items: center;
+      justify-content: center;
+  
+      .stars{
+        display: flex;
+        gap: 3px;
+        img{
+          width: 15px;
+          height: 15px;
+        }
+      }
+  
+      span{
+        color: var(--accent);
+        @media(max-width: 768px){
+          font-size: 14px;
+        }
+      }
+      @media(max-width: 360px) {
+        span{
+          font-size: 10px;
+        }
+      }
+      .line{
+        width: 1px;
+        height: 12px;
+        background-color: var(--accent);
       }
     }
-
-    span{
-      color: var(--accent);
+  
+    .subhero{
+      color: var(--text-colour);
+      font-family: "Merriweather", serif;
+      font-size: 16px;
+      text-align: center;
       @media(max-width: 768px){
         font-size: 14px;
       }
     }
-    @media(max-width: 360px) {
-      span{
-        font-size: 10px;
-      }
-    }
-    .line{
-      width: 1px;
-      height: 12px;
-      background-color: var(--accent);
-    }
-  }
-
-  .subhero{
-    color: var(--text-colour);
-    font-family: "Merriweather", serif;
-    font-size: 16px;
-    text-align: center;
-    @media(max-width: 768px){
-      font-size: 14px;
-    }
-  }
-
-  .hero-title{
-    color: var(--secondary-text-colour);
-    font-size: 96px;
-    line-height: 1;
-    margin: auto;
-    text-align: center;
-    max-width: 80%;
-    span{
+  
+    .hero-title{
+      color: var(--secondary-text-colour);
       font-size: 96px;
-      font-family: "Merriweather", serif;
-      color: var(--accent);
-    }
-    @media(max-width: 1024px) {
-      font-size: 64px;
-      max-width: 100%;
+      line-height: 1;
+      margin: auto;
+      text-align: center;
+      max-width: 80%;
       span{
+        font-size: 96px;
+        font-family: "Merriweather", serif;
+        color: var(--accent);
+      }
+      @media(max-width: 1024px) {
         font-size: 64px;
+        max-width: 100%;
+        span{
+          font-size: 64px;
+        }
       }
-    }
-    @media(max-width: 768px) {
-      font-size: 48px;
-      max-width: 100%;
-      span{
+      @media(max-width: 768px) {
         font-size: 48px;
+        max-width: 100%;
+        span{
+          font-size: 48px;
+        }
       }
-    }
-    @media(max-width: 450px) {
-      font-size: 42px;
-      max-width: 100%;
-      span{
-        font-size:42px;
+      @media(max-width: 450px) {
+        font-size: 42px;
+        max-width: 100%;
+        span{
+          font-size:42px;
+        }
       }
     }
   }
+
 }
 
 .topic-container{
